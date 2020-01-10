@@ -11,21 +11,21 @@ var milUni = document.getElementById('milUni');
 setInterval(
     function printTime() {
         if (btnLeft.className == "btn stop") {
-            minUni.innerHTML = chronometer.twoDigitsNumber(chronometer.getMinutes())[1];
-            minDec.innerHTML = chronometer.twoDigitsNumber(chronometer.getMinutes())[0];
-            secUni.innerHTML = chronometer.twoDigitsNumber(chronometer.getSeconds())[1];
-            secDec.innerHTML = chronometer.twoDigitsNumber(chronometer.getSeconds())[0];
+            printMinutes();
+            printSeconds();
         }
     }
     , 1000);
 
 
 function printMinutes() {
-
+    minUni.innerHTML = chronometer.twoDigitsNumber(chronometer.getMinutes())[1];
+    minDec.innerHTML = chronometer.twoDigitsNumber(chronometer.getMinutes())[0];
 }
 
 function printSeconds() {
-
+    secUni.innerHTML = chronometer.twoDigitsNumber(chronometer.getSeconds())[1];
+    secDec.innerHTML = chronometer.twoDigitsNumber(chronometer.getSeconds())[0];
 }
 
 function printMilliseconds() {
