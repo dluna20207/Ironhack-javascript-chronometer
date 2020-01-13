@@ -39,6 +39,6 @@ class Chronometer {
   }
 
   splitClick() {
-
+    return `${chronometer.twoDigitsNumber(chronometer.getMinutes())}:${chronometer.twoDigitsNumber(chronometer.getSeconds())}`;
   }
 }
